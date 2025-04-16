@@ -23,7 +23,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
   currFolder = folder;
   let a = await fetch(
-    `http://127.0.0.1:3000/Project%202%20-%20SPOTIFY%20CLONE/${folder}`
+    `/${folder}`
   );
   let response = await a.text();
   let div = document.createElement("div");
@@ -78,7 +78,7 @@ return songs;
 }
 
 const playMusic = (track, pause = false) => {
-  currentSong.src = `/Project 2 - SPOTIFY CLONE/${currFolder}/` + track;
+  currentSong.src = `/${currFolder}/` + track;
   if(!pause){
      currentSong.play();
   play.src = "img/pause.svg";
@@ -92,7 +92,7 @@ const playMusic = (track, pause = false) => {
 async function displayAlbums(){
 
   let a = await fetch(
-    `http://127.0.0.1:3000/Project%202%20-%20SPOTIFY%20CLONE/Songs`
+    `/Songs`
   );
   let response = await a.text();
   let div = document.createElement("div");
