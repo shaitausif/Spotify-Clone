@@ -1,0 +1,97 @@
+.border{
+    border: 2px solid red;
+    margin: 4px;
+}
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 7px ;
+}
+
+.m-1{
+    margin: 8px;
+}
+
+.p-1{
+    padding: 15px;
+}
+
+
+/* Ensure no extra overflow on the body or html */
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Allow scrolling only on the main container or specific elements */
+.main-container {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+/* WebKit-based browsers (Chrome, Safari) */
+.main-container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.main-container::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Dark background for the track */
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    background-color: #555; /* Dark gray color for the thumb */
+    border-radius: 6px; /* Rounded corners */
+    border: 2px solid #1e1e1e; /* Padding around the thumb */
+}
+
+.main-container::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Lighter gray on hover */
+}
+
+/* Firefox */
+html {
+    scrollbar-width: thin; /* Thin scrollbar width */
+    scrollbar-color: #555 #1e1e1e; /* Thumb and track colors */
+}
+
+/* Apply the same style to the main container for Firefox */
+.main-container {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1e1e1e;
+}
+
+.main-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.main-container::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+    border: 2px solid #1e1e1e;
+}
+
+.main-container::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
